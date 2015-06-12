@@ -1,5 +1,5 @@
 # ok-games
-Javascript games api and fun tests.
+A Javascript platform game api and fun tests.
 
 
 ## Get Start
@@ -11,4 +11,4 @@ Javascript games api and fun tests.
 
 ## Game Updates
 
-	1. JS Warrior - Warrior A Platform Game :v:
+:v: 1. JS Warrior - Warrior A Platform Game
