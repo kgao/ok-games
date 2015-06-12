@@ -10,5 +10,5 @@ Javascript games api and fun tests.
 -> localhost:5555
 
 ## Game Updates
-
-	1. JS Warrior - Warrior A Platform Game :v:
+:v:
+:v:	1. JS Warrior - Warrior A Platform Game :v:
