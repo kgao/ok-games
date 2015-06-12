@@ -11,4 +11,10 @@ A Javascript platform game api.
 
 ## Game Updates
 
-:v: 1. JS Warrior - Warrior A Platform Game
+#### 0. JS Warrior :v:
+
+	/game/jswarrior : A Platform Game, the goal is running through each level to catch all coins, avoid hitting enemies or lava.
+
+#### 1. TBD :o:
+
+	/game/... : new Game...
