@@ -1,5 +1,5 @@
 # ok-games
-A Javascript platform game api and fun tests.
+A Javascript platform game api.
 
 
 ## Get Start

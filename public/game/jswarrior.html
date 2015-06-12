@@ -1,0 +1,48 @@
+<html>
+
+<head>
+<title>JS Warrior</title>
+
+<link rel="stylesheet" type="text/css" href="../css/game.css">
+<script src="../js/game.js"></script>
+
+
+</head>
+
+<body>
+
+<div id="convas-0"></div>
+
+<script>
+    var levl1 = [
+      "                      ",
+      "                      ",
+      "  x              = x  ",
+      "  x         o o    x  ",
+      "  x @      xxxxx   x  ",
+      "  xxxxx            x  ",
+      "      x!!!!!!!!!!!!x  ",
+      "      xxxxxxxxxxxxxx  ",
+      "                      "
+    ];
+
+    var GAME_LEVELS = [];
+    GAME_LEVELS.push(levl1);
+
+    var simpleLevel = new Level(GAME_LEVELS[0]);
+    console.log(simpleLevel.width, "x", simpleLevel.height);
+
+    document.document.getElementById("convas-0").innerHtml = "Level 1";
+
+    var parent = document.getElementById("convas-0");
+    var DOM_DISPLAY = new DOMDisplay(parent, simpleLevel);
+
+
+    runGame(GAME_LEVELS, DOM_DISPLAY);
+</script>
+
+</body>
+
+
+
+</html>
