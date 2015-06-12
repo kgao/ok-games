@@ -7,7 +7,7 @@ Javascript games api and fun tests.
 	$ npm install
 	$ npm start
 
--> ulocalhost:5555
+-> localhost:5555
 
 ## Game Updates:x:
 
