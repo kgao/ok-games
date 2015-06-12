@@ -11,10 +11,12 @@
 
 <body>
 
-<div id="convas-0"></div>
+<div id="canvas-0"></div>
+<p>Game Play</p>
 
 <script>
-    var levl1 = [
+    //////////////////Array for the game map, level1.2...//////////////////
+    var level1 = [
       "                      ",
       "                      ",
       "  x              = x  ",
@@ -26,19 +28,38 @@
       "                      "
     ];
 
-    var GAME_LEVELS = [];
-    GAME_LEVELS.push(levl1);
+    var level2 = [
+      "                      ",
+      "                      ",
+      "  x           =  = x  ",
+      "  x         o o    x  ",
+      "  x @      xxxxx   x  ",
+      "  xxxxx            x  ",
+      "      x!!!!!!!!!!!!x  ",
+      "      xxxxxxxxxxxxxx  ",
+      "                      "
+    ];
 
+    ////////////////Load map to game////////////////
+    var GAME_LEVELS = [];
+    GAME_LEVELS.push(level1);
+    GAME_LEVELS.push(level2);
+
+    ////////////////Display the canvas////////////////
     var simpleLevel = new Level(GAME_LEVELS[0]);
     console.log(simpleLevel.width, "x", simpleLevel.height);
+    //TODO: Update Level preview based on level.next
+    document.getElementById("canvas-0").innerHTML = "Level Preview";
 
-    document.document.getElementById("convas-0").innerHtml = "Level 1";
-
-    var parent = document.getElementById("convas-0");
+    var parent = document.getElementById("canvas-0");
     var DOM_DISPLAY = new DOMDisplay(parent, simpleLevel);
 
-
+    ////////////////Run game////////////////
     runGame(GAME_LEVELS, DOM_DISPLAY);
+
+    //TODO: Pause the game - modify runLevel function
+    //TODO: Game over - modify runGame function
+    //document.getElementById("canvas-0").innerHTML = "Game Over";
 </script>
 
 </body>
