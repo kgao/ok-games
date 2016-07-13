@@ -46,8 +46,10 @@ var server = http.createServer(function(request, response) {
     filePath = 'public/index.html';
   } else if (request.url == '/game' || request.url == '/game/') {
     filePath = 'public/game.html';
-  } else if (request.url == '/game/jswarrior' || request.url == '/game/jswarrior/') {
-    filePath = 'public/game/jswarrior.html';
+  } else if (request.url == '/game/warrior' || request.url == '/game/warrior/') {
+    filePath = 'public/game/warrior.html';
+  } else if (request.url == '/game/pokemon' || request.url == '/game/pokemon/') {
+    filePath = 'public/game/pokemon.html';
   } else {
     filePath = 'public' + request.url;
   }
